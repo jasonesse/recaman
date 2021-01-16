@@ -1,0 +1,1 @@
+![alt text](https://github.com/jasonessecodes/recaman/blob/main/Figure_1.png?raw=true)

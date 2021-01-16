@@ -1,5 +1,8 @@
 from matplotlib.patches import Arc
 import matplotlib.pyplot as plt
+import logging
+logging.basicConfig(format='%(asctime)-15s %(clientip)s %(user)-8s %(message)s')
+
 
 def generate_recaman_sequence(final_number):
     '''generate the recaman sequence'''
@@ -13,7 +16,7 @@ def generate_recaman_sequence(final_number):
             position -= counter
         result.append(position)
         counter += 1
-    print(result)
+    logging.info(result)
     return result
 
 def plot_recaman_sequence(sequence):
@@ -42,5 +45,5 @@ def plot_recaman_sequence(sequence):
 
 if __name__ == "__main__":
     
-    final_number = 90
+    final_number = 450
     plot_recaman_sequence(generate_recaman_sequence(final_number))
